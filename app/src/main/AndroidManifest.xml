@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.temple.colorpicker2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/web_hi_res_512"
+        android:label="ColorPicker2"
+        android:roundIcon="@mipmap/web_hi_res_512"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".CanvasActivity"
+            android:label="@string/canvasActivity_name">
+        </activity>
+
+
+
+        <activity
+            android:name=".ColorAdapter"
+            android:label="@string/title_activity_color_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
+        <activity android:name=".PaletteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
